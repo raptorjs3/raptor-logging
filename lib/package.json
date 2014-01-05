@@ -1,0 +1,24 @@
+{
+    "raptor": {
+        "dependencies": [
+        ],
+        "extensions": [
+            {
+                "condition": "!extensions.contains('raptor/logging/console')",
+                "dependencies": [
+                    "logging_stubs.js"
+                ]
+            },
+            {
+                "name": "raptor/logging/console",
+                "dependencies": [
+                    {"module": "raptor-stacktraces"},
+                    "Logger.js",
+                    "ConsoleAppender.js",
+                    "logging.js"
+                ]
+            }
+        ]
+    }
+        
+}
