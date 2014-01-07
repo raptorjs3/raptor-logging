@@ -14,8 +14,7 @@
   "dependencies": {
     "raptor-ecma": "0.1.0-SNAPSHOT",
     "raptor-stacktraces": "0.1.0-SNAPSHOT",
-    "raptor-detect": "0.1.0-SNAPSHOT",
-    "raptor-packaging": "0.1.0-SNAPSHOT"
+    "raptor-detect": "0.1.0-SNAPSHOT"
   },
   "devDependencies": {
     "mocha": "~1.15.1",
