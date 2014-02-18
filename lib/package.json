@@ -1,5 +1,5 @@
 {
     "browser": {
-        "./logging.js": "./logging_stubs.js"
+        "./raptor-logging.js": "./raptor-logging_stubs.js"
     }
 }
