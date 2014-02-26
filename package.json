@@ -1,6 +1,6 @@
 {
   "name": "raptor-logging",
-  "version": "0.1.0-SNAPSHOT",
+  "version": "0.2.0-beta",
   "description": "Module to support the optimized delivery of web application resources",
   "repository": {
     "type": "git",
@@ -9,12 +9,12 @@
   "scripts": {
     "test": "node_modules/.bin/mocha --ui bdd --reporter spec  ./test"
   },
-  "author": "Patrick Steele-Idem <psteeleidem@ebay.com>",
-  "maintainers": "Patrick Steele-Idem <psteeleidem@ebay.com>",
+  "author": "Patrick Steele-Idem <pnidem@gmail.com>",
+  "maintainers": "Patrick Steele-Idem <pnidem@gmail.com>",
   "dependencies": {
-    "raptor-ecma": "0.1.0-SNAPSHOT",
-    "raptor-stacktraces": "0.1.0-SNAPSHOT",
-    "raptor-detect": "0.1.0-SNAPSHOT"
+    "raptor-ecma": "^0.2.0-beta",
+    "raptor-stacktraces": "^0.2.0-beta",
+    "raptor-detect": "^0.2.0-beta"
   },
   "devDependencies": {
     "mocha": "~1.15.1",
