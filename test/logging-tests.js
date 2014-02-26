@@ -40,7 +40,7 @@ describe('raptor-logging' , function() {
     });
 
     it('should allow loggers and appenders to be configured', function() {
-        var logging = require('../lib/logging');
+        var logging = require('../');
 
         var appender = createMockAppender();
 
@@ -70,7 +70,7 @@ describe('raptor-logging' , function() {
     });
 
     it('should allow loggers to be created from modules', function() {
-        var logging = require('../lib/logging');
+        var logging = require('../');
 
         var appender = createMockAppender();
 
