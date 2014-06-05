@@ -12,8 +12,7 @@
     "maintainers": "Patrick Steele-Idem <pnidem@gmail.com>",
     "dependencies": {
         "raptor-ecma": "^0.2.0-beta",
-        "raptor-stacktraces": "^0.2.0-beta",
-        "raptor-detect": "^0.2.0-beta"
+        "raptor-stacktraces": "^0.2.0-beta"
     },
     "devDependencies": {
         "mocha": "~1.15.1",

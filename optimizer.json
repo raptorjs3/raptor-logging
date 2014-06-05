@@ -1,5 +1,0 @@
-{
-    "dependencies": [
-        "require: ./lib/resolveLoggerName_browser.js"
-    ]
-}

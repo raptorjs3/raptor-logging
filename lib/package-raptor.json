@@ -1,5 +1,0 @@
-{
-    "browser": {
-        "./logging.js": "./logging_stubs.js"
-    }
-}
