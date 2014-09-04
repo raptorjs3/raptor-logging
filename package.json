@@ -11,8 +11,8 @@
   "author": "Patrick Steele-Idem <pnidem@gmail.com>",
   "maintainers": "Patrick Steele-Idem <pnidem@gmail.com>",
   "dependencies": {
-    "raptor-polyfill": "^0.2.0-beta",
-    "raptor-stacktraces": "^0.2.0-beta"
+    "raptor-polyfill": "^1.0.0-beta",
+    "raptor-stacktraces": "^1.0.0-beta"
   },
   "devDependencies": {
     "mocha": "~1.15.1",
