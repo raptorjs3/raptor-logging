@@ -1,6 +1,5 @@
 {
     "browser": {
-        "./logging.js": "./logging-stubs.js",
         "./resolveLoggerName.js": "./resolveLoggerName-browser.js"
     }
 }
