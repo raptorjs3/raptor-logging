@@ -22,7 +22,6 @@ function createMockAppender() {
                 for (var j=0, len2=actual.args.length; j<len2; j++) {
                     expect(expected.args[j]).to.deep.equal(actual.args[j]);
                 }
-                
             }
         }
     };
@@ -32,7 +31,7 @@ describe('raptor-logging' , function() {
 
     beforeEach(function(done) {
         for (var k in require.cache) {
-            if (require.cache.hasOwnProperty(k)) {
+            if (require.cache[k]) {
                 delete require.cache[k];
             }
         }
@@ -88,5 +87,38 @@ describe('raptor-logging' , function() {
         expect(loggingTestsLogger._loggerName).to.equal('raptor-logging/test/logging-tests');
     });
 
-});
+    it('should allow logging to be created using module id', function() {
+        var logging = require('../');
 
+        logging.configure({
+            loggers: {
+                'foo': 'WARN',
+                'bar': 'DEBUG'
+            }
+        });
+
+        var mockModule = {
+            id: '/path/to/module'
+        };
+
+        var fooLogger = logging.logger(mockModule);
+        expect(fooLogger._loggerName).to.equal('/path/to/module');
+    });
+
+    it('should throw error if module passed to logger does not have id or filename properties', function() {
+        var logging = require('../');
+
+        logging.configure({
+            loggers: {
+                'foo': 'WARN',
+                'bar': 'DEBUG'
+            }
+        });
+
+        var mockModule = {};
+
+        expect(function() {
+            logging.logger(mockModule);
+        }).to.throw('Invalid logger object. It must contain either a `filename` or `id` property.');
+    });
+});
